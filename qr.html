@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="qr.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="qr.js"></script>
+    <div class="head">
+        <h1>QR Code Generator</h1>
+    </div>
+    <div class="input">
+        <input type="text" id="qr" placeholder="Enter text">
+    </div>
+    <div class="input">
+        <input type="number" id="no" placeholder="Enter size">
+    </div>
+    <div class="submit">
+        <button class="button" onclick="qrgenerator()">Generate</button>
+    </div>
+    <div class="download">
+        <button class="button" onclick="download()">Download</button>
+    </div>
+    <div class="img">
+        <img src="" id="img">
+    </div>
+    <div class="alert" id="msg" style="display:none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          Size of the qr code must be greater than 30
+    </div>
+    <div class="alert" id="check" style="display:none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Size cannot be empty
+    </div>
+    <div class="alert" id="generate" style="display:none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Generate the QR Code first
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body{
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color:white;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    text-shadow:8px 8px 10px #0000008c;
+    background-color:#343a40;
+}
+.head{
+    color:azure;
+}
+.input{
+    text-align:center;
+    padding-bottom: 10px;
+}
+#qr,#no{
+    font-size:20px;
+    font-family:initial;
+    color:whitesmoke;
+    border-style:ridge;
+    border-width: 4px;
+    border-color:darkgrey;
+    background-color:#0000008c;
+}
+.download,.submit{
+    padding-bottom:20px;
+}
+.button{
+    display:inline-block;
+    padding: 15px 25px;
+    font-size:24px;
+    cursor:pointer;
+    text-align:center;
+    /* text-decoration:none; */
+    outline:none;
+    color:#fff;
+    background-color:black;
+    font-family:initial;
+    border:none;
+    border-radius:15px;
+    box-shadow: 0 5px #999;
+}
+.button:hover{
+    background-color:#0000008c;
+}
+.button:active{
+    background-color: black;
+    box-shadow:0 5px #666;
+    transform:translateY(4px);
+}
+.alert{
+    padding:20px;
+    color:red;
+}
+.closebtn{
+    color:white;
+    font-weight:bold;
+    font-size:22px;
+    line-height:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+.closebtn:hover{
+    color:black;
+}
